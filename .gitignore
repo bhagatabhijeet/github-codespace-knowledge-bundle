@@ -1,0 +1,4 @@
+# Source videos stay local: too large for GitHub (100 MB limit)
+*.mp4
+*.mov
+*.mkv
