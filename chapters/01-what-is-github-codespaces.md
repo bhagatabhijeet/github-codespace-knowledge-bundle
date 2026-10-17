@@ -22,13 +22,42 @@ sources:
 
 ### _Reproducible dev environments: configure once, works for everyone, on any device._
 
-<p align="center">
-  <img src="../assets/images/ch01-video-panel.png" alt="Christopher Harrison, Chris and Bassem on GitHub in my day job" width="640">
-  <br>
-  <sub>🎬 From <i>GitHub Codespaces: Everything you need to know</i>: Christopher (<code>@geektrainer</code>), Chris from the Codespaces product team, and Bassem from the GitHub Actions team.</sub>
-</p>
-
 > ⏱️ **8-minute read** · 🎯 **You'll learn:** what a codespace is, why "reproducible" is the key word, and what it looks like to go from a repo to a running environment in seconds.
+
+---
+
+## 🎬 A Tale of Two Mondays
+
+Two developers join the same team on the same Monday. Same laptop, same repo, same coffee. ☕ Only one of them has Codespaces.
+
+<table>
+  <tr>
+    <th width="50%">😩 Monday <i>without</i> Codespaces</th>
+    <th width="50%">😎 Monday <i>with</i> Codespaces</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>09:00</b> · Unbox the shiny new laptop ✨<br>
+      <b>09:30</b> · Install Git, Node, Python… <i>which versions?</i><br>
+      <b>11:00</b> · PostgreSQL won't start. Port 5432 is taken 🔥<br>
+      <b>14:00</b> · The setup wiki was last updated two years ago 📜<br>
+      <b>16:30</b> · A teammate says <i>"weird, works on my machine"</i> 🤷<br>
+      <b>Tuesday</b> · Still no code written
+    </td>
+    <td valign="top">
+      <b>09:00</b> · Open the repo on GitHub<br>
+      <b>09:01</b> · Click <b>Code → Codespaces → Create</b> 🖱️<br>
+      <b>09:02</b> · Editor open, tools installed, database running ⚡<br>
+      <b>09:05</b> · <code>npm test</code> passes. All green ✅<br>
+      <b>09:30</b> · First pull request opened 🎉<br>
+      <b>Tuesday</b> · Shipping features 🚀
+    </td>
+  </tr>
+</table>
+
+<sub>☝️ A made-up story to illustrate the point, but every developer has lived the left column.</sub>
+
+This chapter is about getting everyone the **right-hand Monday**. It's based on an episode of GitHub's show _GitHub in my day job_, in which host **Christopher Harrison** talks with **Chris** from the Codespaces product team and **Bassem**, who builds GitHub Actions and uses Codespaces every day.[^video]
 
 ---
 
