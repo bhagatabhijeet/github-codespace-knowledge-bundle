@@ -10,7 +10,6 @@ sources:
   - id: video
     title: "GitHub Codespaces: Everything you need to know (GitHub in my day job, recorded 2023-05-03)"
     resource: https://www.youtube.com/@GitHub
-    author: Christopher Harrison, Chris (Codespaces PM), Bassem Dghaidi
   - id: docs
     title: "GitHub Docs: What are GitHub Codespaces?"
     resource: https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces
@@ -57,13 +56,13 @@ Two developers join the same team on the same Monday. Same laptop, same repo, sa
 
 <sub>☝️ A made-up story to illustrate the point, but every developer has lived the left column.</sub>
 
-This chapter is about getting everyone the **right-hand Monday**. It's based on an episode of GitHub's show _GitHub in my day job_, in which host **Christopher Harrison** talks with **Chris** from the Codespaces product team and **Bassem**, who builds GitHub Actions and uses Codespaces every day.[^video]
+This chapter is about getting everyone the **right-hand Monday**. It's based on an episode of GitHub's show _GitHub in my day job_ about Codespaces. The episode is full of stories from people who build and use it every day.[^video]
 
 ---
 
 ## 🖥️ The Best Day and the Worst Day
 
-Christopher opens the episode with a feeling every developer knows:
+The episode opens with a feeling every developer knows:
 
 > _"The best day in the world is the day that I get a new developer rig, because it's got that new computer smell. And the worst day is the day that I get that new developer rig, because now I know there's a whole bunch of stuff to install."_[^video]
 
@@ -93,7 +92,7 @@ Developer Laptop                Developer Laptop  (just a client)
 
 ## 🎯 Codespaces in a Nutshell
 
-Bassem, a senior engineer who uses Codespaces every day, puts it in one sentence:
+The episode boils it down to one sentence:
 
 > [!IMPORTANT]
 > **Codespaces allows you to create a _reproducible_ development environment.**
@@ -111,37 +110,37 @@ Unpacking that:
   <img src="../assets/images/ch01-codespace-equation.svg" alt="Repository plus Dev Container plus Cloud VM equals Codespace" width="100%">
 </p>
 
-Chris, the product manager on the Codespaces team, adds the part that makes it reproducible:
+And here's the part that makes it reproducible:
 
 > _"The power of Codespaces is that you have to configure it **only once** and it will work **for everybody on any device**."_[^video]
 
 So you stop writing *"here are the steps to update your development environment"* documents. You change the environment configuration once, and **everyone gets the change right away**.
 
 > [!TIP]
-> Christopher's summary: Codespaces takes away the excuse _"…but it works on my machine."_
+> The short version: Codespaces takes away the excuse _"…but it works on my machine."_
 
 ---
 
 ## 🎓 Lessons from the Classroom
 
-Both Bassem and Christopher have taught developers, and they hit the same wall:
+Anyone who has taught developers has hit the same wall:
 
-* 🧑‍🏫 Bassem spent **three years teaching** at a software engineering bootcamp. The first thing he asked every class to do was spin up a VM with **one specific distribution and specific tool versions**, so nobody lost time on inconsistencies. _"Coding is already quite complex."_
-* ⏳ Christopher has seen classes lose **days** just getting people set up: unfamiliar error messages, services, CLI tools. _"Nobody wants to spend five days trying to figure out how to install Python and Postgres."_
+* 🧑‍🏫 In coding bootcamps, the very first task for a class is often to spin up a VM with **one specific distribution and specific tool versions**, so nobody loses time on inconsistencies. _"Coding is already quite complex."_
+* ⏳ Tech training classes can lose **days** just getting people set up: unfamiliar error messages, services, CLI tools. _"Nobody wants to spend five days trying to figure out how to install Python and Postgres."_
 
 ### 🤔 "But shouldn't developers learn how to set up their environment?"
 
-Yes, and they still will. Bassem's answer to that objection:
+Yes, and they still will. Here's the answer to that objection:
 
 > _"People will learn it anyway. With Codespaces, maybe you bump into an issue at some point and you're going to have to do that deep dive. It's not going to take this learning from you. It's just going to allow you to get to the **first win** that you so need whenever you're starting something new."_[^video]
 
-Christopher's rule: focus on **the current lesson**. For someone starting on a project, the most important thing is **writing that first code**.
+The rule of thumb: focus on **the current lesson**. For someone starting on a project, the most important thing is **writing that first code**.
 
 ---
 
 ## 🧅 The Development Environment Is a Product
 
-This is the big mindset shift in the episode. Chris describes how the Codespaces team thinks about it:
+This is the big mindset shift in the episode, and it's how the Codespaces team itself thinks about it:
 
 > [!NOTE]
 > A development environment is a **product you deliver to your developers**. It needs the same maintenance and upkeep as any product, and it keeps evolving along with your code.
@@ -150,13 +149,13 @@ This is the big mindset shift in the episode. Chris describes how the Codespaces
 * 👩‍🔬 Codespaces lets a team of **subject-matter experts** own and build the environment centrally.
 * 🧅 Individuals can then **peel back the layers** when they get curious, in the order that suits them.
 
-The alternative is what most teams have today. In Chris's words, there are no layers: _"you get the entire onion every time."_ And a new hire, straight out of a bootcamp or school, has to bite into it. 🧅😬
+The alternative is what most teams have today. In the episode's words, there are no layers: _"you get the entire onion every time."_ And a new hire, straight out of a bootcamp or school, has to bite into it. 🧅😬
 
 ---
 
 ## 🔁 How Reproducibility Actually Works
 
-Later in the episode, Chris explains the mechanism behind the promise:
+Later, the episode explains the mechanism behind the promise:
 
 1. 📄 **The `devcontainer.json` is your dev environment as code.** It's checked into the repository, and it's the instruction book for how every codespace comes up.
 2. 🌿 **It follows Git, just like your code.** A codespace created from a branch uses *that branch's* dev container configuration. You can change the environment on a feature branch, test it, and merge it. From then on, every new codespace from `main` gets the new setup.
@@ -170,7 +169,7 @@ Later in the episode, Chris explains the mechanism behind the promise:
 
 ## 🎬 Seeing It: Repo to Running Environment
 
-Bassem shows the whole flow on a real open-source project: [`actions/checkout`](https://github.com/actions/checkout), the action nearly every GitHub Actions workflow uses.
+The episode demos the whole flow on a real open-source project: [`actions/checkout`](https://github.com/actions/checkout), the action nearly every GitHub Actions workflow uses.
 
 ### 1️⃣ Start from any repository
 
@@ -182,14 +181,14 @@ On any repo you have access to, the green **Code** button opens a **Codespaces**
 
 ### 2️⃣ …or from the terminal
 
-Bassem prefers the [GitHub CLI](https://cli.github.com/):
+The demo uses the [GitHub CLI](https://cli.github.com/), for anyone who likes to stay in the terminal:
 
 ```shell
 gh codespace list                        # see the codespaces you already have
 gh codespace create -R actions/checkout  # create a new one for this repo
 ```
 
-The CLI asks for a machine size. Bassem picks **4 cores, 8 GB RAM, 32 GB storage**: _"this is not a massive tool."_
+The CLI asks for a machine size. The demo picks **4 cores, 8 GB RAM, 32 GB storage**: _"this is not a massive tool."_
 
 <p align="center">
   <img src="../assets/images/ch01-video-gh-codespace-create.png" alt="Terminal running gh codespace list and gh codespace create -R actions/checkout, choosing a 4-core machine" width="760">
@@ -203,27 +202,27 @@ A few seconds later, local VS Code is connected to the codespace. **The editor r
   <img src="../assets/images/ch01-video-vscode-connected.png" alt="VS Code connected to the checkout codespace, showing the Welcome to Codespaces message in the terminal" width="760">
 </p>
 
-What Christopher points out about this moment:
+What's worth noticing at this moment:
 
 * 🚫 **Nothing was cloned locally.**
 * 🚫 **No `node_modules` on the laptop.** _"Every developer knows just how big that can wind up being."_
 * 🧹 **No leftover containers taking up gigabytes.** The dev container runs in the cloud, not on your disk.
-* 💥 **You can't break your laptop.** Bassem: _"Whatever I install, whatever I delete is contained in this codespace… I can abuse this machine and it will not change anything with my local environment."_
+* 💥 **You can't break your laptop.** _"Whatever I install, whatever I delete is contained in this codespace… I can abuse this machine and it will not change anything with my local environment."_
 * 🌍 **Latency is low.** Codespaces are geographically distributed, so yours can be created in a region close to you.
 
-The first thing Bassem runs is the test suite, to check that the environment works before he changes anything:
+The first command in the new codespace runs the test suite, to check that the environment works before anything changes:
 
 ```shell
 npm test
 ```
 
-All green, and he's ready to contribute. He didn't install anything locally or follow a setup guide.
+All green, and the codespace is ready for its first contribution. Nothing was installed locally, and nobody had to follow a setup guide.
 
 ---
 
 ## ✨ Where Codespaces Shines
 
-At the end of the episode, the panel names the places it pays off most:
+The episode closes by naming the places where Codespaces pays off most:
 
 | Shines when… | Why |
 | :--- | :--- |
