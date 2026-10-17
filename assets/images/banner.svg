@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+  <title id="t">GitHub Codespaces: A Hands-On Field Guide</title>
+  <desc id="d">Book-cover banner showing a cloud-hosted terminal window above the title.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#1b1f4b"/>
+      <stop offset="1" stop-color="#3b0a57"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ee787"/>
+      <stop offset="0.5" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#d2a8ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .tw { animation: tw 3.2s ease-in-out infinite; }
+      .tw2 { animation: tw 4.1s ease-in-out infinite 1.2s; }
+      .tw3 { animation: tw 2.7s ease-in-out infinite 0.6s; }
+      @keyframes tw { 0%,100% { opacity: .15 } 50% { opacity: 1 } }
+      .cur { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+      .float { animation: fl 6s ease-in-out infinite; }
+      @keyframes fl { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+      text { font-family: "Segoe UI", -apple-system, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+
+  <!-- book spine accent -->
+  <rect x="0" y="0" width="18" height="420" fill="#d2a8ff" opacity="0.85"/>
+  <rect x="18" y="0" width="4" height="420" fill="#0d1117" opacity="0.6"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle class="tw"  cx="90"   cy="60"  r="2"/>
+    <circle class="tw2" cx="210"  cy="330" r="1.6"/>
+    <circle class="tw3" cx="420"  cy="40"  r="1.8"/>
+    <circle class="tw"  cx="560"  cy="380" r="1.4"/>
+    <circle class="tw2" cx="1130" cy="70"  r="2"/>
+    <circle class="tw3" cx="1060" cy="360" r="1.6"/>
+    <circle class="tw"  cx="760"  cy="30"  r="1.4"/>
+    <circle class="tw2" cx="320"  cy="190" r="1.2"/>
+  </g>
+
+  <!-- cloud + terminal illustration -->
+  <g class="float">
+    <circle cx="930" cy="200" r="190" fill="url(#glow)"/>
+    <path d="M820 150 a48 48 0 0 1 86 -28 a62 62 0 0 1 112 30 a40 40 0 0 1 -6 80 h-186 a42 42 0 0 1 -6 -82 z"
+          fill="#e6edf3" opacity="0.12" stroke="#58a6ff" stroke-width="2"/>
+    <rect x="800" y="185" width="260" height="150" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <rect x="800" y="185" width="260" height="28" rx="12" fill="#21262d"/>
+    <rect x="800" y="200" width="260" height="13" fill="#21262d"/>
+    <circle cx="820" cy="199" r="5" fill="#ff7b72"/>
+    <circle cx="838" cy="199" r="5" fill="#f2cc60"/>
+    <circle cx="856" cy="199" r="5" fill="#7ee787"/>
+    <text class="mono" x="818" y="240" font-size="15" fill="#7ee787">@you ➜ /workspaces $</text>
+    <text class="mono" x="818" y="265" font-size="15" fill="#e6edf3">gh codespace create</text>
+    <text class="mono" x="818" y="290" font-size="15" fill="#d2a8ff">✔ Ready in the cloud</text>
+    <rect class="cur" x="818" y="302" width="10" height="18" fill="#58a6ff"/>
+  </g>
+
+  <!-- title block -->
+  <text x="70" y="110" font-size="18" letter-spacing="6" fill="#8b949e">A HANDS-ON FIELD GUIDE</text>
+  <text x="66" y="190" font-size="74" font-weight="800" fill="url(#title)">GitHub</text>
+  <text x="66" y="265" font-size="74" font-weight="800" fill="url(#title)">Codespaces</text>
+  <text x="70" y="310" font-size="22" fill="#c9d1d9">Your whole dev environment, one click away.</text>
+  <rect x="70" y="340" width="120" height="4" rx="2" fill="#7ee787"/>
+  <text x="70" y="378" font-size="14" letter-spacing="3" fill="#8b949e">AN OKF 0.2 KNOWLEDGE BUNDLE</text>
+</svg>
