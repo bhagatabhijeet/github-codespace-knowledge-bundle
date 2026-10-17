@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="270" viewBox="0 0 960 270" role="img" aria-labelledby="t d">
+  <title id="t">What a codespace is made of</title>
+  <desc id="d">Repository plus Dev Container plus Cloud VM equals Codespace.</desc>
+  <style>
+    text { font-family: "Segoe UI", -apple-system, Helvetica, Arial, sans-serif; text-anchor: middle; }
+    .g { font-family: Consolas, Menlo, monospace; font-size: 30px; font-weight: 700; }
+    .n { font-size: 19px; font-weight: 700; fill: #e6edf3; }
+    .s { font-size: 13px; fill: #8b949e; }
+    .op { font-size: 40px; font-weight: 800; fill: #8b949e; }
+  </style>
+  <rect width="960" height="270" rx="18" fill="#0d1117"/>
+
+  <rect x="30" y="50" width="190" height="160" rx="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text class="g" x="125" y="110" fill="#58a6ff">git</text>
+  <text class="n" x="125" y="150">Repository</text>
+  <text class="s" x="125" y="175">your code + history</text>
+
+  <text class="op" x="245" y="145">+</text>
+
+  <rect x="270" y="50" width="190" height="160" rx="14" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
+  <text class="g" x="365" y="110" fill="#d2a8ff">{ }</text>
+  <text class="n" x="365" y="150">Dev Container</text>
+  <text class="s" x="365" y="175">devcontainer.json</text>
+
+  <text class="op" x="485" y="145">+</text>
+
+  <rect x="510" y="50" width="190" height="160" rx="14" fill="#161b22" stroke="#f2cc60" stroke-width="2"/>
+  <text class="g" x="605" y="110" fill="#f2cc60">VM</text>
+  <text class="n" x="605" y="150">Cloud VM</text>
+  <text class="s" x="605" y="175">CPU · RAM · disk</text>
+
+  <text class="op" x="722" y="145">=</text>
+
+  <rect x="745" y="40" width="190" height="180" rx="16" fill="#12261a" stroke="#7ee787" stroke-width="3"/>
+  <text class="g" x="840" y="110" fill="#7ee787">&gt;_</text>
+  <text class="n" x="840" y="150">Codespace</text>
+  <text class="s" x="840" y="175" fill="#7ee787">ready to code</text>
+
+  <text x="480" y="252" font-size="14" fill="#8b949e">Your repository, running inside its dev container, on a VM that GitHub hosts for you.</text>
+</svg>
