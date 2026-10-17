@@ -94,7 +94,9 @@ Look out for these callouts in each chapter:
 <summary><b>🟢 Part I: Foundations</b></summary>
 <br>
 
-_Coming soon…_
+| # | Chapter | You'll learn |
+| :---: | :--- | :--- |
+| 1 | ☁️ [What is GitHub Codespaces?](chapters/01-what-is-github-codespaces.md) | Reproducible dev environments, the "dev environment as a product" mindset, and going from repo to running code in seconds |
 
 </details>
 
